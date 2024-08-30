@@ -1,0 +1,215 @@
+/* Basic reset and container styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+/* Grid container */
+.grid-container {
+    margin-top: 40px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 320px));
+    gap: 20px; 
+}
+
+/* Grid items */
+.grid-item {
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    box-sizing: border-box;
+    /* max-width: 200px; */
+    /* max-height: 200px; */
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* Product info styling */
+.product-info p {
+    margin: 5px 0;
+}
+
+/* Checkbox styling */
+.delete-checkbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+/* Button styling */
+button {
+    height: 40px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#delete-product-btn, #cancel-btn{
+    background-color: #ae2626;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.container-add-product {
+  margin: 0 auto;
+    width: 100%;
+    background-color: #ffffff; /* White background for form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.header .title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btns button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-container,#dynamic-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    gap: 35px;
+    margin: 0 auto;
+    max-width: 607px;
+    width: 100%;
+}
+#save-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+small{
+    text-align: center;
+}
+.label-input {
+    position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.input-notification{
+    width: 100%;
+}
+.notification{
+    position:absolute;
+    color: red;
+    font-style: italic;
+}
+.notification p{
+ margin: 0;
+}
+.label-input label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    width: 140px;
+}
+.notification-switcher{
+    position: absolute
+}
+.notification-switcher p{
+    margin: 0;
+    color: red;
+    font-style: italic;
+}
+.description{
+    margin-top: 20px;
+}
+.label-input input,
+.label-input select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.label-input input:focus,
+.label-input select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+.label-input-switcher{
+    justify-content: center;
+}
+.label-input-switcher select {
+    width: 60%;
+}
+.header a{
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .grid-container{
+    
+        grid-template-columns: repeat(2, minmax(150px, 270px));
+        gap: 8px;
+      
+    }
+    .grid-item{
+        padding: 10px;
+    }
+    .header .title{
+        font-size: 20px;
+    }
+    .btns button{
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+    .label-input label{
+        width: 100px;
+    }
+    .label-input input, .label-input select{
+        width: 95%;
+    }
+}
