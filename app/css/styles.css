@@ -20,11 +20,14 @@ body {
 }
 /* Grid container */
 .grid-container {
-    margin-top: 40px;
+    padding: 0 10px;
+    margin: 10px auto;
+    align-items: center;
+    max-width: 1400PX;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 320px));
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fit,minmax(230px,320px));
+    gap: 20px;
 }
 
 /* Grid items */
